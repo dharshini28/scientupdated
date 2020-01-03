@@ -15,7 +15,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="42dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_marginLeft="0dp" />
 
     <TextView
         android:id="@+id/tv2"

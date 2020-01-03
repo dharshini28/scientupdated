@@ -9,7 +9,7 @@
     tools:context=".MainActivity"
     >
 
-    <android.recyclerview.widget.RecyclerView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_below="@+id/searchview"
         android:layout_width="match_parent"

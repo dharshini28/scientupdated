@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"
+        android:background=""
         android:text="Submit" />
 
     <EditText
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/et2"
         android:layout_alignParentTop="true"
+        android:background="#ffcc"
         android:layout_marginTop="61dp"
         android:ems="10"
         android:inputType="textPersonName"
