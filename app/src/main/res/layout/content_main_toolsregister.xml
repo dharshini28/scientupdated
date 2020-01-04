@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient4"
+    android:layout_height="match_parent"
+    tools:context=".ToolsRegistration">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_below="@id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="6"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_below="@id/et1"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv3"
+        android:background="@drawable/rounded_edittext"
+        android:ems="5"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et3"
+        android:layout_toRightOf="@id/tv4"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv5"
+        android:layout_toRightOf="@id/tv6"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPersonName" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/tv5"
+        android:layout_marginLeft="20dp"
+        android:autofillHints="SELECT"
+        android:popupBackground="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et4"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="SELECT"
+        android:popupBackground="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv7"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et6" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="#ffc0cb" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:textSize="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/tv1"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLLNO"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tv3"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOOL"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tv4"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv3"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE NO."
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tv5"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv4"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPARTMENT"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tv6"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv5"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL ID"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tv7"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv6"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/submiticon"/>
+</RelativeLayout>
