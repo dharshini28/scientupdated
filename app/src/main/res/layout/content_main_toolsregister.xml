@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/gradient4"
+    android:background="#000000"
     android:layout_height="match_parent"
     tools:context=".ToolsRegistration">
 
@@ -15,7 +15,7 @@
         android:layout_toRightOf="@id/tv1"
         android:layout_marginLeft="30dp"
         android:background="@drawable/rounded_edittext"
-        android:ems="6"
+        android:ems="11"
         android:layout_marginTop="50dp"
         android:inputType="textPersonName" />
 
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:background="@drawable/rounded_edittext"
         android:layout_height="wrap_content"
-        android:ems="5"
+        android:ems="7"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/tv2"
         android:layout_marginLeft="20dp"
@@ -58,7 +58,7 @@
         android:id="@+id/et6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="7"
+        android:ems="13"
         android:background="@drawable/rounded_edittext"
         android:layout_marginTop="20dp"
         android:layout_below="@id/tv5"

@@ -2,21 +2,20 @@ package com.tutorial.ScientToolsApp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
-import android.app.Activity;
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -64,13 +63,15 @@ public class ToolsRegistration extends AppCompatActivity implements NavigationVi
 
         spinner1.setAdapter(dataAdapter);
 
-        spinner1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent,View view,int position,long id) {
+            public void onItemSelected(AdapterView<?> parent,View view,int position,long id) {
                 String item = parent.getItemAtPosition(position).toString();
+            }
 
-                // Showing selected spinner item
-                Toast.makeText(parent.getContext(),"Selected: " + item,Toast.LENGTH_LONG).show();
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
         List<String> categories2 = new ArrayList<String>();
@@ -83,11 +84,15 @@ public class ToolsRegistration extends AppCompatActivity implements NavigationVi
 
         spinner2.setAdapter(dataAdapter2);
 
-        spinner2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent,View view,int position,long id) {
+            public void onItemSelected(AdapterView<?> parent,View view,int position,long id) {
                 String item = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(),"Selected: " + item,Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
 
@@ -135,10 +140,10 @@ public class ToolsRegistration extends AppCompatActivity implements NavigationVi
             Intent intent = new Intent(ToolsRegistration.this,ToolsRegistration.class);
             startActivity(intent);
         } else if( id == R.id.userprofiles ) {
-            Intent intent = new Intent(ToolsRegistration.this,UserProfiles.class);
+            Intent intent = new Intent(ToolsRegistration.this,ProfilesListActivity.class);
             startActivity(intent);}
         if( id == R.id.tools) {
-            Intent intent = new Intent(ToolsRegistration.this,ToolsDisplay.class);
+            Intent intent = new Intent(ToolsRegistration.this,ToolsListActivity.class);
             startActivity(intent);
         } else if( id == R.id.contacts ) {
             Intent intent = new Intent(ToolsRegistration.this,ContactUsActivity.class);
